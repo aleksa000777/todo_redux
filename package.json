@@ -1,0 +1,43 @@
+{
+  "name": "todo_redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "dev": "npm run start & webpack-dev-server --progress --color",
+    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksa000777/todo_redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksa000777/todo_redux/issues"
+  },
+  "homepage": "https://github.com/aleksa000777/todo_redux#readme",
+  "dependencies": {
+    "axios": "^0.9.1",
+    "express": "^4.13.4",
+    "history": "^2.1.0",
+    "immutable": "^3.8.1",
+    "object-assign": "^4.0.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.3.0",
+    "redux": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.0.3",
+    "babel-loader": "^6.2.4",
+    "eslint": "^2.8.0",
+    "eslint-plugin-react": "^5.0.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
